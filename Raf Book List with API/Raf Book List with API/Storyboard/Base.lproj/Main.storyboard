@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="Raf_Book_List_with_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-c1-2mv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="196" id="Rma-BI-mrQ" customClass="TableViewCell" customModule="Raf_Book_List_with_API" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="196"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rma-BI-mrQ" id="oIS-gq-j7i">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QP0-Ol-EF4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
+                                                    <color key="backgroundColor" red="1" green="0.75088274778323294" blue="0.46871671240213209" alpha="0.67655714897260277" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="414" id="MX4-hT-PhM"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rpo-iG-TSx">
+                                                        <size key="itemSize" width="200" height="196"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="QSK-sK-xRu" customClass="CollectionViewCell" customModule="Raf_Book_List_with_API" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="196"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nov-5R-Re0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="200" height="196"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-2x-ezW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="196"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.80281110327596639" green="0.94341673059999998" blue="0.54053063419396574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="ec0-2x-ezW" firstAttribute="leading" secondItem="Nov-5R-Re0" secondAttribute="leading" constant="0.10000000000000001" id="DhP-TY-RaG"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ec0-2x-ezW" secondAttribute="trailing" constant="0.10000000000000001" id="MUZ-23-MjT"/>
+                                                                    <constraint firstItem="ec0-2x-ezW" firstAttribute="top" secondItem="Nov-5R-Re0" secondAttribute="top" constant="0.10000000000000001" id="cTq-GD-iUQ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="ec0-2x-ezW" secondAttribute="bottom" constant="0.10000000000000001" id="ljc-WR-6nU"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <color key="backgroundColor" red="1" green="0.99072648472431724" blue="0.81672370936486671" alpha="0.67655714897260277" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <size key="customSize" width="200" height="196"/>
+                                                            <connections>
+                                                                <outlet property="BoolNameLabel" destination="ec0-2x-ezW" id="D10-Gg-P29"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QP0-Ol-EF4" firstAttribute="top" secondItem="oIS-gq-j7i" secondAttribute="top" id="Ua6-zX-hbS"/>
+                                                <constraint firstAttribute="trailing" secondItem="QP0-Ol-EF4" secondAttribute="trailing" id="bJ0-Ay-ucC"/>
+                                                <constraint firstAttribute="bottom" secondItem="QP0-Ol-EF4" secondAttribute="bottom" id="hRj-tt-3It"/>
+                                                <constraint firstItem="QP0-Ol-EF4" firstAttribute="leading" secondItem="oIS-gq-j7i" secondAttribute="leading" id="qpN-Ww-JfS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="CustomCollection" destination="QP0-Ol-EF4" id="Lok-oG-gbx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gzb-9o-Bz5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FAN-3K-mHu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G3u-c1-2mv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Iu-1z-gkv"/>
+                            <constraint firstItem="G3u-c1-2mv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="V5f-8i-vwY"/>
+                            <constraint firstItem="G3u-c1-2mv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dE5-u0-rYm"/>
+                            <constraint firstItem="G3u-c1-2mv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fa9-c8-82U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customTableVIew" destination="G3u-c1-2mv" id="m89-PT-gfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="-140.625"/>
+        </scene>
+    </scenes>
+</document>

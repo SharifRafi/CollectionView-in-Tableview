@@ -1,0 +1,6 @@
+framework module Pods_Raf_Book_List_with_API {
+  umbrella header "Pods-Raf Book List with API-umbrella.h"
+
+  export *
+  module * { export * }
+}

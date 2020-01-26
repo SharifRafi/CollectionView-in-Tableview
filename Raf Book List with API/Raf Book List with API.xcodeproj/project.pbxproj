@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8402E0C923D9AE8500C1772F /* BookCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402E0C723D9AE8500C1772F /* BookCategory.swift */; };
+		8402E0CA23D9AE8500C1772F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402E0C823D9AE8500C1772F /* Book.swift */; };
+		84743B2423D82C5700F2CF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84743B2323D82C5700F2CF29 /* AppDelegate.swift */; };
+		84743B2623D82C5700F2CF29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84743B2523D82C5700F2CF29 /* SceneDelegate.swift */; };
+		84743B2823D82C5700F2CF29 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84743B2723D82C5700F2CF29 /* MainViewController.swift */; };
+		84743B2B23D82C5700F2CF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84743B2923D82C5700F2CF29 /* Main.storyboard */; };
+		84743B2D23D82C7500F2CF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84743B2C23D82C7500F2CF29 /* Assets.xcassets */; };
+		84743B3023D82C7500F2CF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84743B2E23D82C7500F2CF29 /* LaunchScreen.storyboard */; };
+		84743B3823D848D400F2CF29 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84743B3723D848D400F2CF29 /* TableViewCell.swift */; };
+		84743B3A23D848EC00F2CF29 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84743B3923D848EC00F2CF29 /* CollectionViewCell.swift */; };
+		F69F4E2C521B4A3E556752FC /* Pods_Raf_Book_List_with_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1620FD55801B5F54523740 /* Pods_Raf_Book_List_with_API.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8402E0C723D9AE8500C1772F /* BookCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCategory.swift; sourceTree = "<group>"; };
+		8402E0C823D9AE8500C1772F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		84743B2023D82C5700F2CF29 /* Raf Book List with API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raf Book List with API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84743B2323D82C5700F2CF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84743B2523D82C5700F2CF29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84743B2723D82C5700F2CF29 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84743B2A23D82C5700F2CF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84743B2C23D82C7500F2CF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84743B2F23D82C7500F2CF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84743B3123D82C7500F2CF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84743B3723D848D400F2CF29 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84743B3923D848EC00F2CF29 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B9A72C8546CB7FF18D082F71 /* Pods-Raf Book List with API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raf Book List with API.release.xcconfig"; path = "Target Support Files/Pods-Raf Book List with API/Pods-Raf Book List with API.release.xcconfig"; sourceTree = "<group>"; };
+		C46A31999FC21CE73BE84C18 /* Pods-Raf Book List with API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Raf Book List with API.debug.xcconfig"; path = "Target Support Files/Pods-Raf Book List with API/Pods-Raf Book List with API.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1620FD55801B5F54523740 /* Pods_Raf_Book_List_with_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Raf_Book_List_with_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84743B1D23D82C5700F2CF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69F4E2C521B4A3E556752FC /* Pods_Raf_Book_List_with_API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42B24B6F81EBFF032F3AC37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB1620FD55801B5F54523740 /* Pods_Raf_Book_List_with_API.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84743B1723D82C5700F2CF29 = {
+			isa = PBXGroup;
+			children = (
+				84743B2223D82C5700F2CF29 /* Raf Book List with API */,
+				84743B2123D82C5700F2CF29 /* Products */,
+				BD608520846A56A6DB4D8927 /* Pods */,
+				42B24B6F81EBFF032F3AC37C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84743B2123D82C5700F2CF29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84743B2023D82C5700F2CF29 /* Raf Book List with API.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84743B2223D82C5700F2CF29 /* Raf Book List with API */ = {
+			isa = PBXGroup;
+			children = (
+				84743B3E23D8491400F2CF29 /* Storyboard */,
+				84743B4023D84CA000F2CF29 /* controller */,
+				84743B3D23D8490900F2CF29 /* model */,
+				84743B3F23D8493800F2CF29 /* support */,
+				84743B2C23D82C7500F2CF29 /* Assets.xcassets */,
+				84743B3123D82C7500F2CF29 /* Info.plist */,
+			);
+			path = "Raf Book List with API";
+			sourceTree = "<group>";
+		};
+		84743B3B23D848F300F2CF29 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				84743B2723D82C5700F2CF29 /* MainViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		84743B3C23D848FB00F2CF29 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84743B3723D848D400F2CF29 /* TableViewCell.swift */,
+				84743B3923D848EC00F2CF29 /* CollectionViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		84743B3D23D8490900F2CF29 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8402E0C823D9AE8500C1772F /* Book.swift */,
+				8402E0C723D9AE8500C1772F /* BookCategory.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		84743B3E23D8491400F2CF29 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				84743B2923D82C5700F2CF29 /* Main.storyboard */,
+				84743B2E23D82C7500F2CF29 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		84743B3F23D8493800F2CF29 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				84743B2323D82C5700F2CF29 /* AppDelegate.swift */,
+				84743B2523D82C5700F2CF29 /* SceneDelegate.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		84743B4023D84CA000F2CF29 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84743B3B23D848F300F2CF29 /* view */,
+				84743B3C23D848FB00F2CF29 /* cell */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BD608520846A56A6DB4D8927 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C46A31999FC21CE73BE84C18 /* Pods-Raf Book List with API.debug.xcconfig */,
+				B9A72C8546CB7FF18D082F71 /* Pods-Raf Book List with API.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84743B1F23D82C5700F2CF29 /* Raf Book List with API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84743B3423D82C7500F2CF29 /* Build configuration list for PBXNativeTarget "Raf Book List with API" */;
+			buildPhases = (
+				A990C5811AD726A13066EDCA /* [CP] Check Pods Manifest.lock */,
+				84743B1C23D82C5700F2CF29 /* Sources */,
+				84743B1D23D82C5700F2CF29 /* Frameworks */,
+				84743B1E23D82C5700F2CF29 /* Resources */,
+				B1E965B8BFE3945480452394 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raf Book List with API";
+			productName = "Raf Book List with API";
+			productReference = 84743B2023D82C5700F2CF29 /* Raf Book List with API.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84743B1823D82C5700F2CF29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84743B1F23D82C5700F2CF29 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 84743B1B23D82C5700F2CF29 /* Build configuration list for PBXProject "Raf Book List with API" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84743B1723D82C5700F2CF29;
+			productRefGroup = 84743B2123D82C5700F2CF29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84743B1F23D82C5700F2CF29 /* Raf Book List with API */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84743B1E23D82C5700F2CF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84743B3023D82C7500F2CF29 /* LaunchScreen.storyboard in Resources */,
+				84743B2D23D82C7500F2CF29 /* Assets.xcassets in Resources */,
+				84743B2B23D82C5700F2CF29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A990C5811AD726A13066EDCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Raf Book List with API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E965B8BFE3945480452394 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raf Book List with API/Pods-Raf Book List with API-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Raf Book List with API/Pods-Raf Book List with API-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Raf Book List with API/Pods-Raf Book List with API-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84743B1C23D82C5700F2CF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8402E0C923D9AE8500C1772F /* BookCategory.swift in Sources */,
+				84743B3A23D848EC00F2CF29 /* CollectionViewCell.swift in Sources */,
+				8402E0CA23D9AE8500C1772F /* Book.swift in Sources */,
+				84743B2823D82C5700F2CF29 /* MainViewController.swift in Sources */,
+				84743B3823D848D400F2CF29 /* TableViewCell.swift in Sources */,
+				84743B2423D82C5700F2CF29 /* AppDelegate.swift in Sources */,
+				84743B2623D82C5700F2CF29 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84743B2923D82C5700F2CF29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84743B2A23D82C5700F2CF29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84743B2E23D82C7500F2CF29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84743B2F23D82C7500F2CF29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84743B3223D82C7500F2CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84743B3323D82C7500F2CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84743B3523D82C7500F2CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46A31999FC21CE73BE84C18 /* Pods-Raf Book List with API.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Raf Book List with API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharif.Raf-Book-List-with-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84743B3623D82C7500F2CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A72C8546CB7FF18D082F71 /* Pods-Raf Book List with API.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Raf Book List with API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharif.Raf-Book-List-with-API";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84743B1B23D82C5700F2CF29 /* Build configuration list for PBXProject "Raf Book List with API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84743B3223D82C7500F2CF29 /* Debug */,
+				84743B3323D82C7500F2CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84743B3423D82C7500F2CF29 /* Build configuration list for PBXNativeTarget "Raf Book List with API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84743B3523D82C7500F2CF29 /* Debug */,
+				84743B3623D82C7500F2CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84743B1823D82C5700F2CF29 /* Project object */;
+}
